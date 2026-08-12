@@ -1,0 +1,6 @@
+{
+  "name": "ZipMaster",
+  "description": "اپلیکیشن مدیریت، بازکردن و فشرده‌سازی فایل‌های ZIP و RAR در اندروید با پشتیبانی از رمزگذاری و تم تاریک حرفه‌ای",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
