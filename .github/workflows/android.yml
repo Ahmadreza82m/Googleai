@@ -21,18 +21,13 @@ jobs:
         cache: gradle
 
     - name: Grant execute permission for gradlew
-      run: chmod +x gradlew || true
+      run: chmod +x gradlew
 
     - name: Build with Gradle
-      run: |
-        if [ -f gradlew ]; then
-          ./gradlew assembleDebug
-        else
-          gradle assembleDebug
-        fi
+      run: ./gradlew assembleDebug --stacktrace
 
     - name: Upload APK
       uses: actions/upload-artifact@v4
       with:
-        name: ZipMaster-Debug-APK
+        name: ZipMaster-Googleai-APK
         path: app/build/outputs/apk/debug/app-debug.apk
