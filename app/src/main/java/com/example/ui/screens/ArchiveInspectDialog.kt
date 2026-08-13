@@ -207,7 +207,7 @@ fun ArchiveInspectDialog(
                         .weight(1f)
                         .fillMaxWidth()
                 ) {
-                    items(metadata.entries) { entry ->
+                    items(items = metadata.entries) { entry ->
                         Row(
                             modifier = Modifier
                                 .fillMaxWidth()

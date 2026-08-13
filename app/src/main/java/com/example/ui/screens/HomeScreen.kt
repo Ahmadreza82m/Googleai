@@ -321,7 +321,7 @@ fun HomeScreen(
                     }
                 }
             } else {
-                items(historyList, key = { it.id }) { item ->
+                items(items = historyList, key = { it.id }) { item ->
                     ActivityHistoryCard(item)
                     Spacer(modifier = Modifier.height(10.dp))
                 }
