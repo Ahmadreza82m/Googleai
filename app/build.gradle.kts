@@ -91,7 +91,7 @@ dependencies {
     implementation(libs.kotlinx.coroutines.core)
     
     implementation(platform(libs.firebase.bom))
-    implementation(libs.firebase.ai)
+    implementation(libs.firebase.vertexai)
     implementation(libs.firebase.appcheck.recaptcha)
 
     testImplementation(libs.junit)
