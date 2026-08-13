@@ -5,7 +5,7 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.google.devtools.ksp)
     alias(libs.plugins.secrets)
-    alias(libs.plugins.google.services)
+    // alias(libs.plugins.google.services)
 }
 
 android {
@@ -58,7 +58,7 @@ secrets {
     ignoreList.add("FIREBASE_APPCHECK_DEBUG_TOKEN")
 }
 
-googleServices { missingGoogleServicesStrategy = MissingGoogleServicesStrategy.WARN }
+// googleServices { missingGoogleServicesStrategy = MissingGoogleServicesStrategy.WARN }
 
 dependencies {
     implementation(libs.androidx.core.ktx)
@@ -90,9 +90,10 @@ dependencies {
     implementation(libs.kotlinx.coroutines.android)
     implementation(libs.kotlinx.coroutines.core)
     
-    implementation(platform(libs.firebase.bom))
-    implementation(libs.firebase.vertexai)
-    implementation(libs.firebase.appcheck.recaptcha)
+    // Firebase dependencies removed to fix build issues as they are not currently used in code
+    // implementation(platform(libs.firebase.bom))
+    // implementation(libs.firebase.vertexai)
+    // implementation(libs.firebase.appcheck.recaptcha)
 
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
